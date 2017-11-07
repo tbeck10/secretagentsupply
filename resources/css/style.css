@@ -134,7 +134,7 @@ nav ul {
   background-color: black;
   color: white;
   padding: 1rem 0 1rem 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 /* Footer */
@@ -143,4 +143,68 @@ footer {
   background-color: black;
   color: white;
   padding: 5rem;
+}
+
+/* Desktop Size */
+
+@media only screen and (min-width: 1025px) {
+  .mobile-nav {
+    display: none;
+  }
+}
+
+/* Tablet Size */
+
+@media only screen and (max-width: 1024px) {
+  .item {
+    width: 47%;
+  }
+  .desktop-nav {
+    display: none;
+  }
+  .mobile-nav {
+    display: block;
+    text-align: center;
+  }
+  .products .glasses {
+    display: none;
+  }
+}
+
+/* Phone Size */
+
+@media only screen and (max-width: 470px) {
+  .hero {
+    height: 15rem;
+  }
+  .new-arrival {
+    top: 10rem;
+    padding: 1rem 2rem;
+  }
+  .new-arrival h4 {
+    font-size: 0.77rem;
+  }
+  .new-arrival h1 {
+    font-size: 1rem;
+  }
+  .item {
+    width: 90%;
+  }
+  .information .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .info-items {
+    width: 90%;
+    padding-bottom: 0.5rem;
+  }
+.products .container {
+    justify-content: center;
+  }
+  .products .watch {
+    display: none;
+  }
+  footer {
+    text-align: center;
+  }
 }
